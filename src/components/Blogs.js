@@ -26,6 +26,7 @@ const Blogs = () => {
     try {
       const response = await axios.get('http://localhost:4000/api/blogs')
       setBlogs(response.data)
+      console.log(response)
     } catch (error) {
       console.error('Error fetching all blog posts:', error)
     }
@@ -99,7 +100,7 @@ const Blogs = () => {
     try {
       const updatedBlogs = blogs.map((blog) => {
         if (blog._id === blogId) {
-          const downvotes = blog.downvotes - 1 >= 0 ? blog.downvotes - 1 : 0
+          const downvotes = downvotes + 1
           return { ...blog, downvotes }
         } else {
           return blog
@@ -137,6 +138,7 @@ const Blogs = () => {
           blogId: currentBlogId,
           content: comment,
         },
+        console.log(currentBlogId)
       )
       console.log(response.data) // check response
       const updatedBlogs = blogs.map((blog) => {
