@@ -1,0 +1,259 @@
+.modalPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modalPopup .modal-content {
+    border: none;
+  }
+  
+  .modalPopup .modal-header {
+    border-bottom: none;
+  }
+  
+  .modalPopup .modal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .modalPopup .modal-body {
+    padding: 1rem 1.5rem;
+  }
+  
+  #formPlaintextEmail {
+    margin-bottom: 1rem;
+  }
+  
+  .modalPopup .form-label {
+    font-weight: 500;
+  }
+  
+  .modalPopup .form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .modalPopup .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .modalPopup .modal-footer {
+    border-top: none;
+  }
+  
+  .modalPopup .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .modalPopup .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .modalPopup .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .modalPopup .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+
+  .modalPopup .close {
+    color: #000;
+    opacity: 1;
+  }
+  
+  .modalPopup .close:focus {
+    color: #000;
+    opacity: 1;
+  }
+  
+  .modalPopup .close:hover {
+    color: #000;
+    opacity: 1;
+  }
+
+
+
+  /* Card design */
+
+
+  .blogPosts {
+    /* width: 100%; */
+    /* height: 20%; */
+    border: 30px solid #9a171700;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px 30px 30px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+    background-color: #ffffff;
+  }
+  
+  .blogPosts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blogPosts p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .blogPosts img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .blogPosts .faCircleUp,
+  .blogPosts .faCircleDown {
+    margin-right: 10px;
+  }
+  
+  .blogPosts .faComment {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .blogPosts .faComment:hover {
+    color: blue;
+  }
+  
+  .blogPosts Button {
+    margin-right: 10px;
+  }
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+    /* font-size: 20px; */
+  }
+  
+  .upvoteButton,
+.downvoteButton {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.upvoteButton:hover,
+.downvoteButton:hover {
+  background-color: #000000a8;
+  /* color: #000000; */
+  border: 1px solid #000000;
+}
+
+  
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    max-height: 150px; /* Adjust the maximum height according to your design */
+    overflow-y: auto;
+  }
+  
+  .commentSection::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .commentSection::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .commentSection::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 8px;
+  }
+  
+  .commentSection::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  
+  
+  .commentIcon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .blogComment {
+    margin: 5px 5px;
+    font-size: 14px;
+    color: #333;
+    border-left: 3px solid #ddd;
+    padding-left: 10px;
+  }
+  
+
+  /* form for posting blogs*/
+  .blogPostForm {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogPostForm label {
+    font-weight: bold;
+  }
+  
+  .blogPostForm input[type='text'],
+  .blogPostForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .blogPostForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .blogPostForm button:hover {
+    background-color: #45a049;
+  }
+  
